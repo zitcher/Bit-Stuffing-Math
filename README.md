@@ -30,3 +30,5 @@ log((1/2)^(j + 1)) < log(1/E[K])
 -(j+1) < -log(E[k])
 j > log(E[k]) - 1
 ```
+
+As increasing the flag size increases the total bits, we want to minimize the flag size `j`. Therefore `log(E[k]) - 1` is the optimum flag size.
