@@ -37,4 +37,4 @@ As increasing the flag size increases the total bits, we want to minimize the fl
 
 ## What about Calculus?
 
-This is much harder to do with calculus. Consider this: we want to minimize the expected total number of bits. So we want to minimize the function `E[K](1/2)^j + j + 2` with respect to j. The derivative of the function would be `E[K]log(1/2)(1/2)^j + j + 2`. Setting that equal to 0, we get a weird, yucky expression that we don't actually want to solve (and solving it would give yucky results). So, the first solution is easier and more intuitive than the calculus one.
+This is much harder to do with calculus. Consider this: we want to minimize the expected total number of bits. So we want to minimize the function `E[K](1/2)^j + j + 2` with respect to j. The derivative of the function would be `E[K]log(1/2)(1/2)^j + j + 2`. Setting that equal to 0, we get a complicated expression. So, the first solution is easier and more intuitive than the calculus one.
