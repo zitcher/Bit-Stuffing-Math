@@ -19,7 +19,7 @@ To find the smallest optimum flag length
 ```
 E[Stuffed Bits and Ending Flag] ~= E[K](1/2)^j + j + 2
 ```
-Now we compare a flag of length j to that of j+1. We want to find the smallest flag size s.t. increasing the flag size increases the total bits.
+Now we compare a flag of length j to that of j+1. We want to find a flag size s.t. increasing the flag size increases the total bits.
 ```
 E[K](1/2)^j + j + 2 < E[K](1/2)^(j + 1) + (j+1) + 2
 E[K](1/2)^j < E[K](1/2)^(j + 1) + 1
