@@ -12,8 +12,8 @@ We assume `P(0) = 1/2` and `P(1) = 1/2`
 The probability of any bit being preceded by a 0 and being the first 1 in a sequence of `j-1` 1s is `P(0)P(1)^(j - 1)=(1/2)^j`. This does not apply to the very first bit (because it cannot be preceded by anything) and the final j-1 bits (they cannot be followed by `j-1` 1s), but as `j` is relatively small compared to `E[K]`, we'll consider the probabilistic differences caused by these bits to be negligable.
 
 
-Due to indepence between bits, the expected number of stuffed bits is `E[Stuffed Bits] ~= E[K]P(1)^(j)`, so 
-`E[Stuffed Bits and Ending Flag] ~= E[K]P(1)^(j) + j + 2`
+Due to indepence between bits, the expected number of stuffed bits is `E[Stuffed Bits] ~= E[K]P(0)P(1)^(j - 1)`, so 
+`E[Stuffed Bits and Ending Flag] ~= E[K]P(0)P(1)^(j - 1) + j + 2`
 
 To find the smallest optimum flag length
 ```
